@@ -1,8 +1,34 @@
-import React from 'react'
+'use client'
+// use client when performing events and using hooks
+
+import SearchManufacturer from "./SearchManufacturer"
+import { useState } from "react"
+
+
+
+
 
 const Searchbar = () => {
+  // for the search 
+const [manufacturer, setManufacturer] = useState('');
+
+
+  const handleSearch = () => {
+
+  }
+
   return (
-    <div>Searchbar</div>
+    <form className="searchbar" action=""
+    onSubmit={handleSearch}
+    >
+    <div className="searchbar__item">
+       {/* search option list */}
+       <SearchManufacturer 
+       manufacturer= {manufacturer}
+       setManuFacturer= {setManufacturer}
+       />
+    </div>
+    </form>
   )
 }
 

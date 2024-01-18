@@ -9,3 +9,15 @@ export interface CustomButtonProps {
     containerStyles: string;
     handleClick?: MouseEventHandler<HTMLButtonElement>; 
 }
+
+export interface CustomFilterProps {
+    title: string;
+
+}
+
+
+export interface SearchManuFacturerProps {
+    manufacturer: string;
+    // setManu is a function(setter func) that takes in a string and doesnt return anything
+    setManuFacturer: (manufacturer: string) => void;
+  }
