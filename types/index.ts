@@ -2,7 +2,15 @@
 
 import { MouseEventHandler } from "react";
 
+export interface FilterProps {
+    manufacturer?: string;
+    year?: number;
+    model?: string;
+    limit?: number;
+    fuel?: string;
+  }
 
+  
 export interface CustomButtonProps {
     title: string;
     btnType?: "button" | "submit";
@@ -21,3 +29,4 @@ export interface SearchManuFacturerProps {
     // setManu is a function(setter func) that takes in a string and doesnt return anything
     setManuFacturer: (manufacturer: string) => void;
   }
+  
